@@ -76,7 +76,7 @@ module.exports = {
             addBase({
                 // Default colors
                 ":root": {
-                    "--color-theme-1": toRGB(colors.blue["800"]),
+                    "--color-theme-1": toRGB('#101010'),
                     "--color-theme-2": toRGB(colors.blue["900"]),
                     "--color-primary": toRGB(colors.blue["900"]),
                     "--color-secondary": toRGB(colors.slate["200"]),

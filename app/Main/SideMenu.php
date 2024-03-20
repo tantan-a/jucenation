@@ -15,31 +15,36 @@ class SideMenu
                 'title' => 'Dashboard',
                 'route_name' => 'dashboard-overview-1',
             ],
-            'e-commerce' => [
-                'icon' => 'shopping-bag',
-                'title' => 'E-Commerce',
-                'sub_menu' => [
-                    'categories' => [
-                        'icon' => 'activity',
-                        'route_name' => 'categories',
-                        'title' => 'Categories'
-                    ],
-                    'products' => [
-                        'icon' => 'activity',
-                        'title' => 'Products',
-                        'route_name' => 'product-list',
-                    ],
-                    'transactions' => [
-                        'icon' => 'activity',
-                        'title' => 'Transactions',
-                        'route_name' => 'transaction-list',
-                    ],
-                ]
+            'transactions' => [
+                'icon' => 'activity',
+                'title' => 'Transactions',
+                'route_name' => 'transaction-list',
+            ],
+            'divider',
+            'products' => [
+                'icon' => 'box',
+                'title' => 'Products',
+                'route_name' => 'product-list',
+            ],  
+            'categories' => [
+                'icon' => 'pocket',
+                'route_name' => 'categories',
+                'title' => 'Categories'
+            ],
+            'variants' => [
+                'icon' => 'layers',
+                'route_name' => 'categories',
+                'title' => 'Variants'
             ],
             'divider',  
             'users' => [
                 'icon' => 'users',
                 'title' => 'Users',
+                'route_name' => 'seller-list',
+            ],
+            'rewards' => [
+                'icon' => 'gift',
+                'title' => 'Rewards',
                 'route_name' => 'seller-list',
             ],
         ];

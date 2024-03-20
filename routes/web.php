@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\ProductCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
     Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
     Route::get('dashboard-overview-4-page', 'dashboardOverview4')->name('dashboard-overview-4');
-    Route::get('categories-page', 'categories')->name('categories');
+    // Route::get('categories-page', 'categories')->name('categories');
     Route::get('add-product-page', 'addProduct')->name('add-product');
     Route::get('product-list-page', 'productList')->name('product-list');
     Route::get('product-grid-page', 'productGrid')->name('product-grid');
@@ -93,4 +94,9 @@ Route::controller(PageController::class)->group(function () {
     Route::get('chart-page', 'chart')->name('chart');
     Route::get('slider-page', 'slider')->name('slider');
     Route::get('image-zoom-page', 'imageZoom')->name('image-zoom');
+});
+
+Route::controller(ProductCategoryController::class)->group(function () {
+    Route::get('categories-page', 'index')->name('categories');
+    Route::get('categories-data', 'data')->name('categories-data');
 });

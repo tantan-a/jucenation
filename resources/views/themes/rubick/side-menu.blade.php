@@ -19,10 +19,10 @@
                 >
                     <img
                         class="w-6"
-                        src="{{ Vite::asset('resources/images/logo.svg') }}"
+                        src="{{ Vite::asset('resources/images/logo.png') }}"
                         alt="Midone - Tailwind Admin Dashboard Template"
+                        style="width: 135px;"
                     />
-                    <span class="ml-3 hidden text-lg text-white xl:block"> Rubick </span>
                 </a>
                 <div class="side-nav__divider my-6"></div>
                 <ul>

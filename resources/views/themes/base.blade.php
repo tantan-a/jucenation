@@ -37,6 +37,8 @@ License: You must have a valid license purchased only from themeforest(the above
         content="LEFT4CODE"
     >
 
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+
     @yield('head')
 
     <!-- BEGIN: CSS Assets-->
@@ -60,6 +62,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!-- BEGIN: Pages, layouts, components JS Assets-->
     @vite('resources/js/components/base/theme-color.js')
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     @stack('scripts')
     <!-- END: Pages, layouts, components JS Assets-->
 </body>
